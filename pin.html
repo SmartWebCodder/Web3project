@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/font/bootstrap-icons.css">
+    <script src="profile.js"></script>
+    <script src="profilereg.js"></script>
+    <title>User Dashboard</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <a class="nav-brand" href="">Virtual ATM</a>
+           <a  href="Dashboard.html" class="sidebar-item"> WITHDRAW  &nbsp; <i class="bi bi-currency-exchange"></i></a><br>
+           <a  href="deposit.html" class="sidebar-item">  DEPOSIT  &nbsp;  <i class="bi bi-wallet2"></i></a><br>
+           <a  href="#" class="sidebar-item1"> CHANGE PIN  &nbsp; <i class="bi bi-disc"></i></a><br>
+           <a  href="transfer.html" class="sidebar-item"> TRANSFER  &nbsp; <i class="bi bi-arrow-right-circle"></i></a><br>
+           <a  href="recharge.html" class="sidebar-item"> RECHARGE  &nbsp; <i class="bi bi-check2-square"></i></a><br>
+           <a  href="arena.html" class="sidebar-item"> PAY ARENA  &nbsp; <i class="bi bi-wallet"></i></a><br>
+                       
+        </nav>
+        <div class="topbar">
+            <input type="button" onclick="logout()" class="logUser" value="Logout">
+           
+            <div class="area" style="padding: 80px; margin-top: 80px; text-align: center;">
+                <h4 align="center" style="margin-bottom: 30px;">
+                    CHANGE YOUR TRANSACTION PIN
+                </h4>
+                <br>
+               <form name="ChangeForm" onsubmit="ChangePin()">
+                <input type="number" name="old" placeholder="OLD PIN" style="margin-bottom: 10px;"   required> <br> 
+                <input type="number" name="nw" placeholder="NEW PIN" style="margin-bottom: 10px;"  required> <br> 
+                <input type="number" name="nw2" placeholder="CONFIRM NEW PIN" style="margin-bottom: 10px;"   required> <br> 
+                <button type="submit" class="btn-1">Change Pin</button> <br>
+               </form>
+               <div style="margin-top: 20px;">
+                <input type="number" placeholder="Account Balance: " style="border-right: none; width: 170px;"  disabled>$<input class="left-btn0" id="bal" type="text" disabled>
+               </div> 
+            </div>
+        </div>
+        
+    </div>
+
+    
+    
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>

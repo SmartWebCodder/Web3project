@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <script src="profile.js"></script>
+    <script src="profilereg.js"></script>
+    <title>User Registration</title>
+    
+</head>
+<body>
+    <div class="row">
+    <div class="col-lg-6" style="background-image: url(img/atm.jpg);">
+        <div class="color-overlay">
+            <h2 class="side-text">
+              SCHOOL MANAGEMENT
+               <p style="font-size: 20px; font-weight: 300;">Developed by AKINTOYE AYOMIDE</p>
+            </h2>
+            
+        </div>
+     </div>
+    <div class="col-lg-6">
+        
+<div class="container">
+<h2><a href="index.html"><img src="img/logo.png" width="170px" height="100px"></a></h2>
+
+<form name="regform" onsubmit="storeUser()" class="form" autocomplete="off">
+    <br>
+    <input type="text" name="fullname" placeholder="Fullname" required><br>
+    
+    <input type="hidden" name="balance" value="20000"> <br>  
+  
+    <input type="number" name="acct" placeholder="Admission Number" id="acctNo" required style="border-right: none; width: 350px;" disabled ><input class="left-btn" type="button" onclick="randomacct();" id="generate" value="CLICK"><br>
+    <br>
+    <input type="number" name="pin" placeholder="Password" style="width: 450px;" required><br>
+   <button type="submit" class="btn-1">Create Account</button> <br>
+    <h4 class="ltext">Already have an Account? <a href="User_login.html" style="text-decoration: none; color: rgb(255, 0, 0);">Login</a></h4>
+</form>
+</div>
+</div>
+</div>
+
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>

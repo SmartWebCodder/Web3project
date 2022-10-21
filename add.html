@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="icons/font/bootstrap-icons.css">
+    <script src="profile.js"></script>
+    <script src="profilereg.js"></script>
+    <title>User Dashboard</title>
+    
+</head>
+<body>
+    <div class="wrapper">
+        <nav class="sidebar">
+            <a class="nav-brand" href="">Web3Bridge</a>
+            <a  href="Dashboard.html" class="sidebar-item"> HOME  &nbsp; <i class="bi bi-arrow-right-circle"></i></a><br>
+            <a  href="#" class="sidebar-item1">  ADD NEW  &nbsp;  <i class="bi bi-arrow-right-circle"></i></a><br>
+            <a  href="all.html" class="sidebar-item"> ALL STUDENT  &nbsp; <i class="bi bi-arrow-right-circle"></i></a><br>
+            <a  href="stu.html" class="sidebar-item"> VIEW  &nbsp; <i class="bi bi-arrow-right-circle"></i></a><br>
+                       
+        </nav>
+        <div class="topbar">
+            <input type="button" onclick="logout()" class="logUser" value="Logout">
+           
+            <div class="area" style="padding: 90px; margin-top: 50px; text-align: center;">
+                <h4 align="center" style="margin-bottom: 30px;">
+                   Add a Student
+                </h4>
+                <br>
+               <form name="wForm" onsubmit="#">
+                <input type="text" name="amt" placeholder="Student Fullname"> <br> <br> 
+                <input type="text" name="cl" placeholder="Student Class"> <br> 
+                <br> 
+                <input type="text" name="age" placeholder="Student Age"> <br> 
+                <br>
+                <input type="text" name="email" placeholder="Student Email"> <br> 
+                <br> 
+                <button type="submit" class="btn-1">ADD</button> <br>
+               </form>
+               
+            </div>
+        </div>
+        
+    </div>
+
+    
+    
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
