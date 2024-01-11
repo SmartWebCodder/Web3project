@@ -15,6 +15,8 @@ class profile{
 
       }
   }
+
+  //DetailToJson
  
   DetailsToJASON(){
       var nameConv = this.fullname;
