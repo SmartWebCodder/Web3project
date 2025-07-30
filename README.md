@@ -1,1 +1,1 @@
-Web3 App Project
+Web3 Project
